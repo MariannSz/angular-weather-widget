@@ -1,27 +1,65 @@
-# AngularWeatherWidget
+# 📦 Weather Widget
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+A simple and beautiful weather widget built with **Angular** and **Tailwind CSS**.  
+It uses **mock data** to simulate real weather information and includes a **loading spinner** for a smooth user experience.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ Features
 
-## Code scaffolding
+- Displays **current weather** information (city, temperature, feels like, wind speed, humidity, visibility)
+- **7-day forecast** dynamically generated
+- **Loading spinner** when refreshing data
+- **Mock data** used instead of real API for instant load and easy portfolio showcasing
+- Built with **Angular 19** and **Tailwind CSS 3**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Angular](https://angular.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Material Symbols](https://fonts.google.com/icons) (for weather icons)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📸 Screenshots
 
-## Running end-to-end tests
+|                          Weather View                           |                          Loading Spinner                          |
+| :-------------------------------------------------------------: | :---------------------------------------------------------------: |
+| ![Weather Widget Screenshot](src/assets/screenshots/widget.png) | ![Loading Spinner Screenshot](src/assets/screenshots/loading.png) |
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🛠️ Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+# Clone the repository
+git clone https://github.com/MariannSz/angular-weather-widget.git
+
+# Navigate into the project
+cd angular-weather-widget
+
+# Install dependencies
+npm install
+
+# Run the development server
+ng serve
+```
+
+The app will be available at [http://localhost:4200](http://localhost:4200) 🚀
+
+---
+
+## 🧠 How It Works
+
+- Weather data is **mocked** locally in `app.component.ts`
+- The app uses `*ngIf` to **show a loading spinner** when refreshing
+- The **7-day forecast** cards are dynamically generated using `*ngFor`
+- Clicking the **Refresh** button simulates reloading data with a short delay
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for educational and portfolio purposes.
